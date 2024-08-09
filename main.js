@@ -5,6 +5,8 @@ var ratingsMenu = document.querySelector(".ratingsMenu");
 var submit_btn = document.querySelector(".submit");
 var skip_btn = document.querySelector(".skip");
 
+let isSubmitable = true;
+
 let comments = {
     "1":"Poor 👎",
     "2":"Didn't impress me 🥱",
@@ -15,6 +17,8 @@ let comments = {
 
 for (let i = 0; i < ratings.length; i++) {
     ratings[i].addEventListener("click", () => {
+            submit_btn.style.cursor = "pointer";
+
         console.log(ratings[i].id)
         for (let x = 0; x < ratings.length; x++) {
             ratings[x].checked = false;

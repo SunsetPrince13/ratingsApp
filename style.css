@@ -1,25 +1,31 @@
 body{
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.897);
 }
 
 .wrapper{
-    width: 600px;
+    width: 500px;
     height: 400px;
-    border-radius: 15px;
-    background-color: rgb(7, 7, 105);
+    border-radius: 28px;
+    background-color: rgba(8, 8, 68, 0.996);
     text-align: center;
     margin: auto;
     color: #fff;
     padding: 50px;
+    box-shadow: 3px #111;
 }
 
 .submit{
-    width: 300px;
-    height: 40px;
-    font-size: 26px;
+    width: 450px;
+    height: 60px;
+    font-size: 16px;
     border: none;
     background-color: orangered;
     color: #fff;
+    border-radius: 30px;
+}
+
+.submit:hover{
+    cursor: not-allowed;
 }
 
 .skip{
@@ -34,4 +40,29 @@ body{
 .thankFeedback{
     display: none;
 
+}
+
+.ratings{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(29, 29, 93, 0.712);
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    padding: 7px;
+    margin: 5px;
+}
+
+.ratings:hover{
+    cursor: pointer;
+    background-color: rgba(29, 29, 93, 0.94);
+    font-size: 28px;
+    color: orange;
+}
+
+.ratings:active{
+    font-size: 28px;
+    background-color: rgba(47, 47, 145, 0.94);
 }
